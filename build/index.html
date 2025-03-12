@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./assets/images/favicon-32x32.png" />
+
+		<title>Calculator app</title>
+	</head>
+	<body>
+		<!--  -->
+		<main class="main">
+			<header class="main__header header">
+				<h1 class="header__title">calc</h1>
+				<div class="header__theme themes">
+					<span class="themes__label" id="themes-label">THEME</span>
+
+					<ul class="themes__numbers" id="themes-numbers">
+						<li class="themes__theme-label">1</li>
+						<li class="themes__theme-label">2</li>
+						<li class="themes__theme-label">3</li>
+					</ul>
+
+					<div
+						class="themes__radiogroup"
+						role="radiogroup"
+						aria-labelledby="themes-label"
+						aria-describedby="themes-numbers">
+						<input
+							class="theme__input"
+							type="radio"
+							id="theme-1"
+							name="theme"
+							value="1"
+							checked />
+						<input
+							class="theme__input"
+							type="radio"
+							id="theme-2"
+							name="theme"
+							value="2" />
+						<input
+							class="theme__input"
+							type="radio"
+							id="theme-3"
+							name="theme"
+							value="3" />
+						<span class="theme__slider">O</span>
+					</div>
+				</div>
+			</header>
+			<!--  -->
+			<section class="main__calculator calculator">
+				<h2 class="sr-only">Display calculator</h2>
+				<div class="calculator__container">
+					<div class="calculator__accumulate">
+						<span class="calculator__ans"></span>
+					</div>
+					<label for="display" class="sr-only">Calculator display</label>
+					<input
+						type="text"
+						class="calculator__display"
+						id="display"
+						disabled
+						aria-label="Display" />
+				</div>
+				<section class="calculator__interaction">
+					<h2 class="sr-only">Operations calculator</h2>
+					<fieldset class="calculator__interaction">
+						<legend class="sr-only">
+							Calculator keypad with numbers and operations
+						</legend>
+						<button type="button" class="calculator__buttons">7</button>
+						<button type="button" class="calculator__buttons">8</button>
+						<button type="button" class="calculator__buttons">9</button>
+						<button
+							type="button"
+							class="calculator__buttons calculator__buttons--remove">
+							DEL
+						</button>
+						<button type="button" class="calculator__buttons">4</button>
+						<button type="button" class="calculator__buttons">5</button>
+						<button type="button" class="calculator__buttons">6</button>
+						<button type="button" class="calculator__buttons">+</button>
+						<button type="button" class="calculator__buttons">1</button>
+						<button type="button" class="calculator__buttons">2</button>
+						<button type="button" class="calculator__buttons">3</button>
+						<button type="button" class="calculator__buttons">-</button>
+						<button type="button" class="calculator__buttons">.</button>
+						<button type="button" class="calculator__buttons">0</button>
+						<button type="button" class="calculator__buttons">/</button>
+						<button type="button" class="calculator__buttons">x</button>
+						<button
+							type="button"
+							class="calculator__buttons calculator__buttons--remove">
+							RESET
+						</button>
+						<button
+							type="button"
+							class="calculator__buttons calculator__buttons--result">
+							=
+						</button>
+					</fieldset>
+				</section>
+			</section>
+		</main>
+
+		<!--  -->
+	</body>
+</html>
