@@ -1,0 +1,88 @@
+@use '../abstract/variables' as v;
+@use '../abstract/mixins' as mx;
+.calculator {
+	width: 100%;
+	@include mx.flex($aling: streach, $gap: 1.5rem);
+	&__display {
+		padding: 0.8rem 2rem;
+		background-color: v.$very-dark-desaturated-blue;
+		@include mx.mobile(v.$mobile) {
+			height: 6rem;
+		}
+		height: 8rem;
+		border-radius: 0.5rem;
+		@include mx.flex($aling: flex-end, $justify: flex-start, $gap: 0.2rem);
+	}
+
+	&__accumulate {
+		min-width: 7rem;
+		text-align: right;
+	}
+
+	&__ans {
+		font-size: 1.15em;
+		color: v.$white;
+	}
+
+	&__screen {
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		text-align: right;
+		font-size: 3.2em;
+		@include mx.mobile(v.$mobile) {
+			font-size: 2.1em;
+		}
+		color: v.$white;
+	}
+
+	&__interaction {
+		border-radius: 1rem;
+		padding: 1.5rem;
+		background-color: v.$very-dark-desaturated-blue-ligth;
+		@include mx.grid();
+	}
+
+	&__buttons {
+		width: 6rem;
+		height: 3.67rem;
+
+		@include mx.mobile(v.$mobile) {
+			width: 100%;
+		}
+
+		border-radius: 0.5rem;
+		box-shadow: 0rem 0.3rem 0rem v.$grayish-orange;
+		transition: transform 0.15s linear, box-shadow 0.15s linear;
+
+		&:active {
+			box-shadow: 0rem 0rem 0rem v.$grayish-orange;
+			transform: translateY(0.3rem);
+		}
+
+		&--reset {
+			width: 100%;
+			grid-column: span 2;
+		}
+
+		&--remove {
+			background-color: v.$desaturated-dark-blue-bg;
+			color: v.$white;
+			font-size: 0.7em;
+			box-shadow: 0rem 0.3rem 0rem v.$desaturated-dark-blue-sh;
+		}
+
+		&--result {
+			grid-column: span 1;
+			width: 100%;
+			background-color: v.$red;
+			font-size: 0.7em;
+			color: v.$white;
+			box-shadow: 0rem 0.3rem 0rem v.$dark-red;
+		}
+
+		&--ans {
+			font-size: 0.7em;
+		}
+	}
+}
