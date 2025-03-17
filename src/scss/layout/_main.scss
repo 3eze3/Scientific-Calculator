@@ -1,0 +1,9 @@
+@use '../abstract/mixins' as mx;
+@use '../abstract/variables' as v;
+.main {
+	width: 33rem;
+	@include mx.flex($aling: flex-start);
+	@include mx.mobile(v.$mobile) {
+		width: 100%;
+	}
+}
