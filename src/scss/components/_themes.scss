@@ -1,0 +1,51 @@
+@use '../abstract/mixins' as mx;
+@use '../abstract/variables' as v;
+.themes {
+	@include mx.flex($direction: row, $gap: 1.7rem, $aling: flex-end);
+
+	&__wrapper {
+		@include mx.flex($gap: 0.3rem);
+	}
+
+	&__numbers {
+		@include mx.flex($direction: row, $gap: 1rem);
+	}
+
+	&__radiogroup {
+		position: relative;
+		width: 4.5rem;
+		height: 1.6rem;
+		border-radius: 1.25rem;
+		@include mx.flex($direction: row, $gap: 0.5rem);
+		background-color: v.$very-dark-desaturated-blue-ligth;
+	}
+
+	&__input {
+		width: 1rem;
+		height: 1rem;
+		opacity: 0;
+		&:checked:nth-of-type(1) ~ .themes__slider {
+			left: 0.25rem;
+		}
+
+		&:checked:nth-of-type(2) ~ .themes__slider {
+			left: 1.75rem;
+		}
+
+		&:checked:nth-of-type(3) ~ .themes__slider {
+			left: 3.25rem;
+		}
+	}
+
+	&__slider {
+		position: absolute;
+		background-color: v.$red;
+		pointer-events: none;
+		top: calc(50% - 0.5rem);
+		left: 0.25rem;
+		width: 1rem;
+		height: 1rem;
+		border-radius: 50%;
+		transition: left 0.3s ease-in-out;
+	}
+}
