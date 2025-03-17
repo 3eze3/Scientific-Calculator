@@ -1,0 +1,36 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+	vertical-align: baseline;
+}
+*::before,
+*::after {
+	display: block;
+}
+
+li {
+	list-style-type: none;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+input,
+button,
+label {
+	font: inherit;
+	hyphens: auto;
+	background-color: transparent;
+	color: inherit;
+	display: block;
+}
+
+input:focus {
+	outline: none;
+	border: none;
+}
