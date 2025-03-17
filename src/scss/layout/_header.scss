@@ -1,0 +1,5 @@
+@use '../abstract/mixins' as mx;
+.header {
+	width: 100%;
+	@include mx.flex($direction: row, $justify: space-between, $gap: 0);
+}
