@@ -29,5 +29,5 @@
 	},
 	"include": ["src/ts/**/*"], // Incluye todos los archivos dentro de la carpeta `src`
 	"exclude": ["node_modules", "build"], // Excluye la carpeta `node_modules` y `build`
-	"files": ["src/ts/index.ts"] // Especifica un solo archivo de entrada para compilar en un único archivo JavaScript
+	"files": ["src/ts/index.mts"] // Especifica un solo archivo de entrada para compilar en un único archivo JavaScript
 }
