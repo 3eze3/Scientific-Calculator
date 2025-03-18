@@ -4,7 +4,7 @@
 
 ## Welcome! 👋
 
-[Deploy](https://)
+[Deploy](https://scientific-calculator-2.netlify.app)
 
 Thanks for checking out this front-end coding challenge.
 
