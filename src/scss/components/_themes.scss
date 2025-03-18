@@ -17,7 +17,6 @@
 		height: 1.6rem;
 		border-radius: 1.25rem;
 		@include mx.flex($direction: row, $gap: 0.5rem);
-		background-color: v.$very-dark-desaturated-blue-ligth;
 	}
 
 	&__input {
@@ -39,7 +38,6 @@
 
 	&__slider {
 		position: absolute;
-		background-color: v.$red;
 		pointer-events: none;
 		top: calc(50% - 0.5rem);
 		left: 0.25rem;
