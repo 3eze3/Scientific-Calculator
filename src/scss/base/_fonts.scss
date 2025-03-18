@@ -1,0 +1,76 @@
+@use '../abstract/variables' as v;
+@use '../abstract/mixins' as mx;
+body {
+	min-height: 100dvh;
+	hyphens: manual;
+	display: grid;
+	place-content: center;
+	@include mx.mobile(v.$mobile) {
+		padding-inline: 1.5rem;
+	}
+	font-family: v.$leagueSpartan-bd;
+	@include mx.apply-theme(v.$theme-1);
+	font-smooth: always;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.theme-1 {
+	@include mx.apply-theme(v.$theme-1);
+}
+
+.theme-2 {
+	@include mx.apply-theme(v.$theme-2);
+}
+
+.theme-3 {
+	@include mx.apply-theme(v.$theme-3);
+}
+
+h1 {
+	font-size: 2em;
+	color: v.$white;
+}
+
+span {
+	font-size: 0.75em;
+	letter-spacing: 0.08em;
+}
+
+li {
+	font-size: 0.95em;
+}
+
+button {
+	line-height: 4rem;
+	&:active {
+		transform: translateY(0.3rem);
+	}
+}
+
+.calculator__number {
+	width: 100%;
+	letter-spacing: -0.04em;
+	font-size: 2.4em;
+	@include mx.mobile(v.$mobile) {
+		font-size: 1.8em;
+		letter-spacing: -0.01em;
+	}
+}
+
+span,
+li {
+	color: v.$white;
+}
+
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border-width: 0;
+}
