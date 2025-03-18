@@ -3,38 +3,35 @@
 	font-family: 'LeagueSpartan Bold';
 	font-weight: 700;
 	src: local('LeagueSpartan Regular'),
-		url('../../../build/assets/fonts/LeagueSpartan-Bold.woff2') format(woff2),
-		url('../../../build/assets/fonts/LeagueSpartan-Bold.woff') format(woff),
-		url('../../../build/assets/fonts/LeagueSpartan-Bold.ttf') format(truetype);
+		url('../assets/fonts/LeagueSpartan-Bold.woff2') format(woff2),
+		url('../assets/fonts/LeagueSpartan-Bold.woff') format(woff),
+		url('../assets/fonts/LeagueSpartan-Bold.ttf') format(truetype);
 }
 
 @font-face {
 	font-family: 'LeagueSpartan SemiBold';
 	font-weight: 600;
 	src: local('LeagueSpartan Regular'),
-		url('../../../build/assets/fonts/LeagueSpartan-SemiBold.woff2')
-			format(woff2),
-		url('../../../build/assets/fonts/LeagueSpartan-SemiBold.woff') format(woff),
-		url('../../../build/assets/fonts/LeagueSpartan-SemiBold.ttf')
-			format(truetype);
+		url('../assets/fonts/LeagueSpartan-SemiBold.woff2') format(woff2),
+		url('../assets/fonts/LeagueSpartan-SemiBold.woff') format(woff),
+		url('../assets/fonts/LeagueSpartan-SemiBold.ttf') format(truetype);
 }
 
 @font-face {
 	font-family: 'LeagueSpartan Medium';
 	font-weight: 500;
 	src: local('LeagueSpartan Regular'),
-		url('../../../build/assets/fonts/LeagueSpartan-Medium.woff2') format(woff2),
-		url('../../../build/assets/fonts/LeagueSpartan-Medium.woff') format(woff),
-		url('../../../build/assets/fonts/LeagueSpartan-Medium.ttf') format(truetype);
+		url('../assets/fonts/LeagueSpartan-Medium.woff2') format(woff2),
+		url('../assets/fonts/LeagueSpartan-Medium.woff') format(woff),
+		url('../assets/fonts/LeagueSpartan-Medium.ttf') format(truetype);
 }
 @font-face {
 	font-family: 'LeagueSpartan Regular';
 	font-weight: 400;
 	src: local('LeagueSpartan Regular'),
-		url('../../../build/assets/fonts/LeagueSpartan-Regular.woff2') format(woff2),
-		url('../../../build/assets/fonts/LeagueSpartan-Regular.woff') format(woff),
-		url('../../../build/assets/fonts/LeagueSpartan-Regular.ttf')
-			format(truetype);
+		url('../assets/fonts/LeagueSpartan-Regular.woff2') format(woff2),
+		url('../assets/fonts/LeagueSpartan-Regular.woff') format(woff),
+		url('../assets/fonts/LeagueSpartan-Regular.ttf') format(truetype);
 }
 
 // --------------------------- Family Fonts ---------------------------
