@@ -5,7 +5,6 @@
 	@include mx.flex($aling: streach, $gap: 1.5rem);
 	&__display {
 		padding: 0.8rem 2rem;
-		background-color: v.$very-dark-desaturated-blue;
 		@include mx.mobile(v.$mobile) {
 			height: 6rem;
 		}
@@ -36,10 +35,9 @@
 		color: v.$white;
 	}
 
-	&__interaction {
+	&__keypad {
 		border-radius: 1rem;
 		padding: 1.5rem;
-		background-color: v.$very-dark-desaturated-blue-ligth;
 		@include mx.grid();
 	}
 
@@ -52,11 +50,9 @@
 		}
 
 		border-radius: 0.5rem;
-		box-shadow: 0rem 0.3rem 0rem v.$grayish-orange;
 		transition: transform 0.15s linear, box-shadow 0.15s linear;
 
 		&:active {
-			box-shadow: 0rem 0rem 0rem v.$grayish-orange;
 			transform: translateY(0.3rem);
 		}
 
@@ -66,19 +62,15 @@
 		}
 
 		&--remove {
-			background-color: v.$desaturated-dark-blue-bg;
 			color: v.$white;
 			font-size: 0.7em;
-			box-shadow: 0rem 0.3rem 0rem v.$desaturated-dark-blue-sh;
 		}
 
 		&--result {
 			grid-column: span 1;
 			width: 100%;
-			background-color: v.$red;
 			font-size: 0.7em;
 			color: v.$white;
-			box-shadow: 0rem 0.3rem 0rem v.$dark-red;
 		}
 
 		&--ans {
