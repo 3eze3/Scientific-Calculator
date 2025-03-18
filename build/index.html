@@ -39,20 +39,20 @@
 								type="radio"
 								id="theme-1"
 								name="theme"
-								value="1"
+								value="theme-1"
 								checked />
 							<input
 								class="themes__input"
 								type="radio"
 								id="theme-2"
 								name="theme"
-								value="2" />
+								value="theme-2" />
 							<input
 								class="themes__input"
 								type="radio"
 								id="theme-3"
 								name="theme"
-								value="3" />
+								value="theme-3" />
 							<span class="themes__slider"></span>
 						</div>
 					</div>
@@ -63,7 +63,7 @@
 				<h2 class="sr-only">Display calculator</h2>
 				<div class="calculator__display">
 					<div class="calculator__accumulate">
-						<span class="calculator__ans">Ans: 1</span>
+						<span class="calculator__ans">Ans: 0</span>
 					</div>
 					<label for="screen" class="sr-only">Calculator display</label>
 					<input
@@ -73,7 +73,7 @@
 						disabled
 						aria-label="Display" />
 				</div>
-				<fieldset class="calculator__interaction">
+				<fieldset class="calculator__keypad">
 					<legend class="sr-only">
 						Calculator keypad with numbers and operations
 					</legend>
@@ -88,10 +88,11 @@
 					</button>
 					<button
 						type="button"
-						class="calculator__buttons calculator__buttons--remove" value="DEL">
-						<span class="calculator__number calculator__number--remove"
-							>DEL</span
-						>
+						class="calculator__buttons calculator__buttons--remove"
+						value="DEL">
+						<span class="calculator__number calculator__number--remove">
+							DEL
+						</span>
 					</button>
 					<button type="button" class="calculator__buttons" value="4">
 						<span class="calculator__number">4</span>
@@ -129,10 +130,16 @@
 					<button type="button" class="calculator__buttons" value="*">
 						<span class="calculator__number">x</span>
 					</button>
-					<!-- <button type="button" class="calculator__buttons">Ans</button> -->
 					<button
 						type="button"
-						class="calculator__buttons calculator__buttons--remove calculator__buttons--reset"  value="RESET">
+						class="calculator__buttons calculator__buttons--ans"
+						value="ans">
+						<span class="calculator__number">Ans</span>
+					</button>
+					<button
+						type="button"
+						class="calculator__buttons calculator__buttons--remove calculator__buttons--reset"
+						value="RESET">
 						<span class="calculator__number calculator__number--remove">
 							RESET
 						</span>
